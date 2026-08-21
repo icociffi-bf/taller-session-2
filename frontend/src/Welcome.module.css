@@ -1,0 +1,137 @@
+.page {
+  min-height: 100vh;
+  background-color: var(--color-canvas-dark);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: var(--color-surface-dark-elevated);
+  border-bottom: 1px solid rgba(229, 229, 229, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.headerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.brand {
+  color: var(--color-on-dark);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.logoutButton {
+  background-color: transparent;
+  color: var(--color-on-dark);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.324px;
+  border-radius: var(--rounded-full);
+  border: 1.5px solid rgba(229, 229, 229, 0.4);
+  padding: 8px 20px;
+  height: 40px;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.logoutButton:hover {
+  border-color: var(--color-on-dark);
+}
+
+.main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: var(--spacing-section) var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xxl);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.heroTitle {
+  color: var(--color-on-dark-mute);
+  font-size: 44px;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+}
+
+.heroName {
+  color: var(--color-on-dark);
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -0.1px;
+}
+
+.heroSubtitle {
+  color: var(--color-on-dark-mute);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  max-width: 540px;
+  margin-top: var(--spacing-xs);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.card {
+  background-color: var(--color-surface-dark-card);
+  border-radius: var(--rounded-md);
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  transition: transform 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.cardIcon {
+  font-size: 32px;
+}
+
+.cardTitle {
+  color: var(--color-on-dark);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.cardBody {
+  color: var(--color-on-dark-mute);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
